@@ -127,7 +127,7 @@ test_api.py
 
    Separate actual detection to another container microservice to handle big files that may require more time to process.
    Use a message broker like RabbitMQ to pass information.
-   For this demo, adding bounded box for the images just takes 35 milliseconds (so to add a broker is currently an overkill but definitely needed when requirement becomes more complex)
+   For this demo, adding bounded box for the images just takes less than 35 milliseconds (so to add a broker is currently an overkill but definitely needed when requirement becomes more complex)
 
 3. <b>Scalability and High-availability</b>
 
