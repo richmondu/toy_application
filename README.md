@@ -78,7 +78,7 @@ This solution uses </b>microservices architecture</b> instead of using serverles
 
 ### System testing
 
-via Swagger UI
+via <b>Swagger UI</b>
 
 - Copy https://hacarustoyapplication.s3.amazonaws.com/swagger_openapi.json to the Explore input
 
@@ -99,7 +99,7 @@ via Swagger UI
     (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
 
 
-via Swagger Editor
+via <b>Swagger Editor</b>
 
 - Copy swagger_openapi.yaml to the Swagger Editor https://editor.swagger.io/
 
@@ -118,7 +118,7 @@ via Swagger Editor
     (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
 
 
-via test_curl_upload.bat
+via <b>vtest_curl_upload.bat</b>
 
 - This uses the images in <b>test_images\input</b>
 - curl -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image.jpg" 
@@ -128,7 +128,7 @@ via test_curl_upload.bat
 - curl -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__zoom200_0_300_300.jpg" 
 
 
-via test_curl_download.bat
+via <b>test_curl_download.bat</b>
 
 - This downloads the processed images in <b>test_images\output</b>
 - curl -o image.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image.jpg/processed
