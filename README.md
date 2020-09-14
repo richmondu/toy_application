@@ -211,7 +211,7 @@ test_api.py
 5. <b>Scalability and High-availability</b>
 
    Use AWS Elastic Load Balancer that points to an Auto Scaling Group of more than 1 EC2 instance located in multi-AZ availability zones for scalability and high availability
-   Can alternatively use Docker Swarm or Kubernetes.
+   Can alternatively use Docker Swarm or Kubernetes (not is not recommended now since there are only 2 containers).
 
 
 
