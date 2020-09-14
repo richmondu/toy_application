@@ -64,6 +64,7 @@ This solution uses </b>microservices architecture</b> instead of using serverles
     - <b>Jenkins</b> - for automated build and deployment (CI/CD); refer to toy_application\Jenkinsfile
     - <b>unittest</b> - for API unit testing
     - <b>curl</b> - for API system testing
+    - <b>Swagger OpenAPI</b> - for API documentation
 
 - Below are the APIs:
 
@@ -146,8 +147,5 @@ test_api.py
    Use AWS Elastic Load Balancer that points to an Auto Scaling Group of more than 1 EC2 instance located in multi-AZ availability zones for scalability and high availability
    Can alternatively use Docker Swarm or Kubernetes.
 
-6. <b>Documentation</b>
-
-   Use Swagger (OpenAPI) for documentation. When using FastAPI, support for Swagger is easier.
 
 
