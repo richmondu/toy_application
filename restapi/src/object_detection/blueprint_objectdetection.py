@@ -62,6 +62,6 @@ def download_image_processed(id):
 @ApiLogger.log
 def delete_image_processed(id):
 	img = UploadedFile(file_name=id)
-	img.delete()
+	img.delete_processed()
 	return jsonify(status='OK')
 
