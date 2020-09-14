@@ -61,6 +61,12 @@ This solution uses microservices architecture instead of using serverless archit
     - Nginx
     - Jenkins
 
+- Below are the APIs:
+
+    - Upload image POST /api/v1/objectdetection/image
+    - Download image GET /api/v1/objectdetection/image/{id}
+    - Download processed image GET /api/v1/objectdetection/image/{id}/processed
+
 
 ### Testing
 
