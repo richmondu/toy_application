@@ -1,6 +1,6 @@
 # Toy Application 
 
-### Specs
+### Requirements
 
 #### Background:
 
