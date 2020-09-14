@@ -80,11 +80,11 @@ This solution uses </b>microservices architecture</b> instead of using serverles
 test_curl_upload.bat
 
 - This uses the images in <b>test_images\input</b>
-- curl -H "Content-Type: multipart/form-data" -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image.jpg" 
-- curl -H "Content-Type: multipart/form-data" -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__blur4.0.jpg" 
-- curl -H "Content-Type: multipart/form-data" -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__fliph.jpg" 
-- curl -H "Content-Type: multipart/form-data" -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__rot180.jpg" 
-- curl -H "Content-Type: multipart/form-data" -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__zoom200_0_300_300.jpg" 
+- curl -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image.jpg" 
+- curl -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__blur4.0.jpg" 
+- curl -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__fliph.jpg" 
+- curl -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__rot180.jpg" 
+- curl -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__zoom200_0_300_300.jpg" 
 
 
 test_curl_download.bat
