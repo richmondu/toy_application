@@ -2,6 +2,9 @@
 
 This is a simple exercise demonstrating serving APIs for object detection.
 
+<img src="./_images/image_processed.jpg" width="1000"/>
+
+
 # Requirements
 
 ### Background:
@@ -75,6 +78,7 @@ This solution uses </b>microservices architecture</b> instead of using serverles
     - To view using <b>Swagger UI</b>, go to https://petstore.swagger.io/, then use https://hacarustoyapplication.s3.amazonaws.com/swagger_openapi.json and click Explore.
       <img src="./_images/SwaggerUI.png" width="1000"/>
 
+
 # Testing
 
 
@@ -120,7 +124,7 @@ via <b>Swagger Editor</b> (https://editor.swagger.io/)
     (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
 
 
-via <b>vtest_curl_upload.bat</b>
+via <b>test_curl_upload.bat</b>
 
 - This uses the images in <b>test_images\input</b>
 - curl -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image.jpg" 
