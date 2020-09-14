@@ -72,6 +72,8 @@ This solution uses </b>microservices architecture</b> instead of using serverles
     - <b>Download image</b> GET /api/v1/objectdetection/image/{id}
     - <b>Download processed image</b> GET /api/v1/objectdetection/image/{id}/processed
 
+    - To view using <b>Swagger UI</b>, go to https://petstore.swagger.io/, then use https://hacarustoyapplication.s3.amazonaws.com/swagger_openapi.json and click Explore.
+      <img src="./_images/SwaggerUI.png" width="1000"/>
 
 # Testing
 
