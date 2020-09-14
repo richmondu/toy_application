@@ -50,26 +50,22 @@ Link to the openCV application can be found here: https://www.geeksforgeeks.org/
 
 ### Design
 
-Microservices architecture instead of using serverless services for better control and flexibility (can run anywhere, any cloud, not tied up to AWS).
+This solution uses microservices architecture instead of using serverless architecture for better control and flexibility - can run anywhere, any cloud, not tied up to AWS.
+
+- It uses the following tech stack:
+
+    - Flask
+    - gUnicorn
+    - Docker
+    - Docker-compose
+    - Nginx
+    - Jenkins
 
 
 ### Testing
 
-test.py
 
-- Test the logic
-
-- uses test_images/input/*
-  Augmentation was done on image.jpg to produced several images (rotated, blurred, flipped, transformed, etc)
-
-- outputs result to test_images/output/*
-  Same filename as in input
-
-
-test_api.py
-
-- Test the APIs
-
+##### System testing
 
 test_curl_upload.bat
 
@@ -87,6 +83,24 @@ test_curl_download.bat
 - curl -o image__fliph.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image__fliph.jpg/processed
 - curl -o image__rot180.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image__rot180.jpg/processed
 - curl -o image__zoom200_0_300_300.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image__zoom200_0_300_300.jpg/processed
+
+
+##### Unit testing
+
+test.py
+
+- Test the logic
+
+- uses test_images/input/*
+  Augmentation was done on image.jpg to produced several images (rotated, blurred, flipped, transformed, etc)
+
+- outputs result to test_images/output/*
+  Same filename as in input
+
+
+test_api.py
+
+- Test the APIs
 
 
 
