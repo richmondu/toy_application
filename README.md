@@ -63,9 +63,9 @@ This solution uses microservices architecture instead of using serverless archit
 
 - Below are the APIs:
 
-    - Upload image POST /api/v1/objectdetection/image
-    - Download image GET /api/v1/objectdetection/image/{id}
-    - Download processed image GET /api/v1/objectdetection/image/{id}/processed
+    - <b>Upload image</b> POST /api/v1/objectdetection/image
+    - <b>Download image</b> GET /api/v1/objectdetection/image/{id}
+    - <b>Download processed image</b> GET /api/v1/objectdetection/image/{id}/processed
 
 
 ### Testing
