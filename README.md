@@ -143,6 +143,8 @@ via <b>test_curl_upload.bat</b>
 - curl -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__rot180.jpg" 
 - curl -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__zoom200_0_300_300.jpg" 
 
+  <img src="./_images/CurlUpload.png" width="1000"/>
+
 
 via <b>test_curl_download.bat</b>
 
@@ -152,6 +154,8 @@ via <b>test_curl_download.bat</b>
 - curl -o image__fliph.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image__fliph.jpg/processed
 - curl -o image__rot180.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image__rot180.jpg/processed
 - curl -o image__zoom200_0_300_300.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image__zoom200_0_300_300.jpg/processed
+
+  <img src="./_images/CurlDownload.png" width="1000"/>
 
 
 ### Unit testing
