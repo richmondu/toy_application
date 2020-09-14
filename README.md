@@ -76,7 +76,7 @@ Currently, there are only 2 containers - REST API microservice and NGINX microse
     - <b>Jenkins</b> - for automated build and deployment (CI/CD); refer to toy_application\Jenkinsfile
     - <b>Github</b> - for source code repository
 
-    - Jenkins has been setuped to download from get code from Github and then deploy to AWS EC2.
+    - Jenkins has been setuped to download from get code from Github and then build and deploy to AWS EC2.
       <img src="./_images/JenkinsCICD.png" width="1000"/>
 
 - Below are the APIs:
