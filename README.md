@@ -97,6 +97,13 @@ Currently, there are only 2 containers - REST API microservice and NGINX microse
 # Testing
 
 
+### Data Augmentation
+
+In order to produce more test data, it is necessary to do data augmentation.
+Data augmentation means deriving new images from the test images via rotation, blurring, transformation, scaling, etc.
+This technique is often useful in computer vision and machine learning projects as collecting data is often challenging.
+
+
 ### System testing
 
 via <b>Swagger UI</b> (https://petstore.swagger.io/)
@@ -202,7 +209,7 @@ test_api.py
 
 3. <b>Performance</b>
 
-   Use FastAPI with uvicorn (instead of Flask with gUnicorn) for faster performance (with async/await for concurrency).
+   Use <b>FastAPI with uvicorn</b> (instead of Flask with gUnicorn) for faster performance (with async/await for concurrency).
    Caching for images processed using Redis database will also help so that processed images no need to be processed again.
 
 4. <b>Reliability and robustness</b>
@@ -213,7 +220,7 @@ test_api.py
 
 5. <b>Scalability and High-availability</b>
 
-   Use AWS Elastic Load Balancer that points to an Auto Scaling Group of more than 1 EC2 instance located in multi-AZ availability zones for scalability and high availability
+   Use <b>AWS Elastic Load Balancer</b> that points to an <b>Auto Scaling Group</b> of more than 1 EC2 instance located in <b>multi-AZ availability zones</b> for scalability and high availability
    Can alternatively use Docker Swarm or Kubernetes (not is not recommended now since there are only 2 containers).
 
 
