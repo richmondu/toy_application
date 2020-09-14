@@ -78,9 +78,9 @@ This solution uses </b>microservices architecture</b> instead of using serverles
 
 ### System testing
 
-via <b>Swagger UI</b>
+via <b>Swagger UI</b> (https://petstore.swagger.io/)
 
-- Copy https://hacarustoyapplication.s3.amazonaws.com/swagger_openapi.json to the Explore input
+- Copy https://hacarustoyapplication.s3.amazonaws.com/swagger_openapi.json to the Swagger UI Explore input
 
 - Click on Explore button
 
@@ -99,9 +99,9 @@ via <b>Swagger UI</b>
     (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
 
 
-via <b>Swagger Editor</b>
+via <b>Swagger Editor</b> (https://editor.swagger.io/)
 
-- Copy swagger_openapi.yaml to the Swagger Editor https://editor.swagger.io/
+- Copy https://hacarustoyapplication.s3.amazonaws.com/swagger_openapi.yaml to the Swagger Editor 
 
 - Select http://127.0.0.1:8000 localhost or https://richmondu.com
 
