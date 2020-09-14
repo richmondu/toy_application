@@ -118,27 +118,27 @@ test_api.py
 
 ### Points for improvement:
 
-1. Performance
+1. <b>Performance</b>
 
    Use FastAPI with uvicorn (instead of Flask with gUnicorn) for faster performance (with async/await for concurrency).
    Caching for images processed using Redis database will also help so that processed images no need to be processed again.
 
-2. Reliability and robustness
+2. <b>Reliability and robustness</b>
 
    Separate actual detection to another container microservice to handle big files that may require more time to process.
    Use a message broker like RabbitMQ to pass information.
    For this demo, adding bounded box for the images just takes 35 milliseconds (so to add a broker is currently an overkill)
 
-3. Scalability and High-availability
+3. <b>Scalability and High-availability</b>
 
    Use AWS Elastic Load Balancer that points to an Auto Scaling Group of more than 1 EC2 instance located in multi-AZ availability zones for scalability and high availability
    Can alternatively use Docker Swarm or Kubernetes.
 
-4. Documentation
+4. <b>Documentation</b>
 
    Use Swagger (OpenAPI) for documentation.
 
-5. Others
+5. <b>Others</b>
 
    Copy data to Amazon S3 not in local file system. 
    Currently, everything is stored in the file system.
