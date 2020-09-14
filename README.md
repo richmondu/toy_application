@@ -65,12 +65,19 @@ Currently, there are only 2 containers - REST API microservice and NGINX microse
     - <b>Docker</b> - for microservice containerization
     - <b>Docker-compose</b> - for building and running the docker containers; refer to toy_application\docker-compose.yml
     - <b>Nginx</b> - web server for API server, SSL offloading (and load balancing when using multiple nodes); refer to toy_application\nginx
-    - <b>Jenkins</b> - for automated build and deployment (CI/CD); refer to toy_application\Jenkinsfile
     - <b>unittest</b> - for API unit testing
     - <b>curl</b> - for API system testing
     - <b>Swagger OpenAPI</b> - for API documentation
     - <b>AWS Route53</b> - for routing richmondu.com to the EC2 instance running the containers
     - <b>GoDaddy</b> - for certificates for richmondu.com
+
+- Automated build and deployment is setuped using Jenkins pipeline:
+
+    - <b>Jenkins</b> - for automated build and deployment (CI/CD); refer to toy_application\Jenkinsfile
+    - <b>Github</b> - for source code repository
+
+    - Jenkins has been setuped to download from get code from Github and then deploy to AWS EC2.
+      <img src="./_images/JenkinsCICD.png" width="1000"/>
 
 - Below are the APIs:
 
