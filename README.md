@@ -21,32 +21,31 @@ Link to the openCV application can be found here: https://www.geeksforgeeks.org/
 
 ##### Submission Guidelines:
 
-Package the submission as a container project.
+- Package the submission as a container project.
 
-Submit this toy application marked as a private repo in a git repository.
+- Submit this toy application marked as a private repo in a git repository.
 
-Be ready to show a good working demo.
+- Be ready to show a good working demo.
 
-Feel free to discuss any detail related to the task prior to submission.
+- Feel free to discuss any detail related to the task prior to submission.
 
-Stretch Goals (optional):
+- Stretch Goals (optional):
 
-Expose a swagger UI of your backend endpoints.
+    - Expose a swagger UI of your backend endpoints.
 
-Design it to scale for hundreds of requests per second
+    - Design it to scale for hundreds of requests per second
 
+- Questions:
 
-##### Questions:
+    - Please walk us through your solution and explain your approach
 
-Please walk us through your solution and explain your approach
+    - Why did you take this approach?
 
-Why did you take this approach?
+    - If you were to complete the stretch goals, what would be your approach and what steps would you take?
 
-If you were to complete the stretch goals, what would be your approach and what steps would you take?
+    - What are the issues you think the team would encounter in relation to the development of machine vision products?
 
-What are the issues you think the team would encounter in relation to the development of machine vision products?
-
-How would you solve these issues?
+    - How would you solve these issues?
 
 
 ### Design
@@ -112,7 +111,3 @@ test_curl_download.bat
 5. Others
    Copy data to Amazon S3 not in local file system. 
    Currently, everything is stored in the file system.
-
-
-
-- 
