@@ -60,6 +60,7 @@ This solution uses microservices architecture instead of using serverless archit
     - Docker-compose
     - Nginx
     - Jenkins
+    - unittest
 
 - Below are the APIs:
 
