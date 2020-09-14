@@ -55,7 +55,7 @@ Link to the openCV application can be found here: https://www.geeksforgeeks.org/
 
 # Design
 
-This solution uses </b>microservices architecture</b> instead of using serverless architecture for better control and flexibility - can run anywhere, any cloud, not tied up to AWS.
+This solution uses <b>microservices architecture</b> instead of using serverless architecture for better control and flexibility - can run anywhere, any cloud, not tied up to AWS.
 Currently, there are only 2 containers - REST API microservice and NGINX microservice.
 
 <img src="./_images/PuttyAWSEC2.png" width="1000"/>
