@@ -114,6 +114,8 @@ via <b>Swagger UI</b> (https://petstore.swagger.io/)
 
     (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
 
+  <img src="./_images/SwaggerUI.png" width="1000"/>
+
 
 via <b>Swagger Editor</b> (https://editor.swagger.io/)
 
@@ -132,6 +134,8 @@ via <b>Swagger Editor</b> (https://editor.swagger.io/)
 - Test Download processed image 
 
     (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
+
+  <img src="./_images/SwaggerEditor.png" width="1000"/>
 
 
 via <b>test_curl_upload.bat</b>
