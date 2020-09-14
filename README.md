@@ -75,6 +75,7 @@ This solution uses microservices architecture instead of using serverless archit
 
 test_curl_upload.bat
 
+- This uses the images in test_images\input
 - curl -H "Content-Type: multipart/form-data" -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image.jpg" 
 - curl -H "Content-Type: multipart/form-data" -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__blur4.0.jpg" 
 - curl -H "Content-Type: multipart/form-data" -X POST http://127.0.0.1:8000/api/v1/objectdetection/image -F "image=@image__fliph.jpg" 
@@ -84,6 +85,7 @@ test_curl_upload.bat
 
 test_curl_download.bat
 
+- This downloads the processed images in test_images\output
 - curl -o image.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image.jpg/processed
 - curl -o image__blur4.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image__blur4.jpg/processed
 - curl -o image__fliph.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image__fliph.jpg/processed
