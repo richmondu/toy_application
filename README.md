@@ -99,10 +99,10 @@ test.py
 
 - Test the logic
 
-- uses test_images/input/*
+- uses <b>test_images/input/*</b>
   Augmentation was done on image.jpg to produced several images (rotated, blurred, flipped, transformed, etc)
 
-- outputs result to test_images/output/*
+- outputs result to <b>test_images/output/*</b>
   Same filename as in input
 
 
