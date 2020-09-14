@@ -78,9 +78,9 @@ This solution uses </b>microservices architecture</b> instead of using serverles
 
 ### System testing
 
-via Swagger Editor 
+via Swagger Editor for a Swagger UI
 
-- Copy swagger_openapi.yaml to the Swagger Editor (https://editor.swagger.io/)
+- Copy swagger_openapi.yaml to the Swagger Editor https://editor.swagger.io/
 
 - Select http://127.0.0.1:8000 localhost or https://richmondu.com
 
