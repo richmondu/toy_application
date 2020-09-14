@@ -50,7 +50,7 @@ Link to the openCV application can be found here: https://www.geeksforgeeks.org/
 
 ### Design
 
-This solution uses microservices architecture instead of using serverless architecture for better control and flexibility - can run anywhere, any cloud, not tied up to AWS.
+This solution uses </b>microservices architecture</b> instead of using serverless architecture for better control and flexibility - can run anywhere, any cloud, not tied up to AWS.
 
 - It uses the following tech stack:
 
