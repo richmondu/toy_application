@@ -61,6 +61,7 @@ This solution uses microservices architecture instead of using serverless archit
     - Nginx
     - Jenkins
     - unittest
+    - curl
 
 - Below are the APIs:
 
