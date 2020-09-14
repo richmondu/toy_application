@@ -70,7 +70,8 @@ Currently, there are only 2 containers - REST API microservice and NGINX microse
     - <b>unittest</b> - for API unit testing
     - <b>curl</b> - for API system testing
     - <b>Swagger OpenAPI</b> - for API documentation
-    - <b>AWS Route53</b> - for routing richmondu.com to the EC2 instance running the containers
+    - <b>AWS EC2</b> - for running the containers, uses Amazon Linux AMI 2 OS
+    - <b>AWS Route53</b> - for routing richmondu.com to the EC2 instance
     - <b>GoDaddy</b> - for certificates for richmondu.com
 
 - Automated build and deployment is setuped using Jenkins pipeline:
