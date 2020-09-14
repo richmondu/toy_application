@@ -86,7 +86,9 @@ Currently, there are only 2 containers - REST API microservice and NGINX microse
 
     - <b>Upload image</b> POST /api/v1/objectdetection/image
     - <b>Download image</b> GET /api/v1/objectdetection/image/{id}
+    - <b>Delete image</b> DELETE /api/v1/objectdetection/image/{id}
     - <b>Download processed image</b> GET /api/v1/objectdetection/image/{id}/processed
+    - <b>Delete processed image</b> DELETE /api/v1/objectdetection/image/{id}/processed
 
     - To view using <b>Swagger UI</b>, go to https://petstore.swagger.io/, then use https://hacarustoyapplication.s3.amazonaws.com/swagger_openapi.json and click Explore.
       <img src="./_images/SwaggerUI.png" width="1000"/>

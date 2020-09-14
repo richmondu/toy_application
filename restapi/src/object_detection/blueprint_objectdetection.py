@@ -19,7 +19,6 @@ def upload_image():
 	img.process(asynch=True)
 	return jsonify(status='OK', image={"id": file_name} )
 
-
 # Download the uploaded image
 # curl -O http://127.0.0.1:8000/api/v1/objectdetection/image/image.jpg
 # curl -O http://127.0.0.1:8000/api/v1/objectdetection/image/image__fliph.jpg
@@ -31,6 +30,17 @@ def download_image(id):
 	if result is None:
 		return abort(400)
 	return result
+
+# Delete the uploaded image
+# curl -X DELETE http://127.0.0.1:8000/api/v1/objectdetection/image/image.jpg
+# curl -X DELETE http://127.0.0.1:8000/api/v1/objectdetection/image/image__fliph.jpg
+@blueprint_objectdetection.route("/image/<id>", methods=['DELETE'])
+@ApiLogger.log
+def delete_image(id):
+	img = UploadedFile(file_name=id)
+	img.delete()
+	return jsonify(status='OK')
+
 
 
 # Download the processed uploaded image
@@ -44,4 +54,14 @@ def download_image_processed(id):
 	if result is None:
 		return abort(400)
 	return result
+
+# Delete the processed uploaded image
+# curl -X DELETE http://127.0.0.1:8000/api/v1/objectdetection/image/image.jpg/processed
+# curl -X DELETE http://127.0.0.1:8000/api/v1/objectdetection/image/image__fliph.jpg/processed
+@blueprint_objectdetection.route("/image/<id>/processed", methods=['DELETE'])
+@ApiLogger.log
+def delete_image_processed(id):
+	img = UploadedFile(file_name=id)
+	img.delete()
+	return jsonify(status='OK')
 

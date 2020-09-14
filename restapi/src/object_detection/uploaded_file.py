@@ -81,3 +81,18 @@ class UploadedFile:
 				return None
 			return send_from_directory(directory=IMAGE_DIR_UPLOADS, filename=self.file_name)
 		return send_from_directory(directory=IMAGE_DIR_PROCESSED, filename=self.file_name)
+
+
+	def delete(self):
+		if self.file_name is None:
+			return
+		if not os.path.isfile(IMAGE_DIR_UPLOADS + self.file_name):
+			return
+		os.remove(IMAGE_DIR_UPLOADS + self.file_name)
+
+	def delete_processed(self):
+		if self.file_name is None:
+			return
+		if not os.path.isfile(IMAGE_DIR_PROCESSED + self.file_name):
+			return
+		os.remove(IMAGE_DIR_PROCESSED + self.file_name)
