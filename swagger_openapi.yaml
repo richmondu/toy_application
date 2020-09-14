@@ -1,0 +1,61 @@
+openapi: "3.0.0"
+info:
+  title: "Toy Application"
+  description: "Simple application demonstrating operationalizing object detection model"
+  version: "1.0.0"
+servers:
+  - url: http://127.0.0.1:8000/api/v1
+    description: For local development testing
+  - url: https://richmondu.com/api/v1
+    description: For live production testing
+paths:
+  /objectdetection/image:
+    post:
+      summary: "Uploads an image to process"
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: "object"
+              properties:
+                image:
+                  type: "string"
+                  format: "binary"
+            encoding:
+              image:
+                contentType: image/jpeg
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Invalid status value"
+  /objectdetection/image/{id}:
+    get:
+      summary: "Downloads an image"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: "string"
+        required: true
+        description: ID of the image file
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Invalid status value"
+  /objectdetection/image/{id}/processed:
+    get:
+      summary: "Downloads the processed image"
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: "string"
+        required: true
+        description: ID of the image file
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Invalid status value"
