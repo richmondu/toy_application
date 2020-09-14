@@ -1,5 +1,5 @@
-::set UPLOAD_API="http://127.0.0.1:8000/api/v1/objectdetection/image"
-set UPLOAD_API="https://richmondu.com/api/v1/objectdetection/image"
+set UPLOAD_API="http://127.0.0.1:8000/api/v1/objectdetection/image"
+::set UPLOAD_API="https://richmondu.com/api/v1/objectdetection/image"
 
 cd test_images\input\
 
