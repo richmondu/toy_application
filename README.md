@@ -81,10 +81,20 @@ This solution uses </b>microservices architecture</b> instead of using serverles
 via Swagger Editor 
 
 - Copy swagger_openapi.yaml to the Swagger Editor (https://editor.swagger.io/)
+
 - Select http://127.0.0.1:8000 localhost or https://richmondu.com
-- Test Upload image (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
-- Test Download image (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
-- Test Download processed image (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
+
+- Test Upload image 
+
+    (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
+
+- Test Download image 
+
+    (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
+
+- Test Download processed image 
+
+    (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
 
 
 via test_curl_upload.bat
