@@ -54,14 +54,14 @@ This solution uses microservices architecture instead of using serverless archit
 
 - It uses the following tech stack:
 
-    - Flask - for API development
-    - gUnicorn - for WSGI server; refer to toy_application\restapi\src\wsgi.py
-    - Docker - for microservice containerization
-    - Docker-compose - for building and running the docker containers; refer to toy_application\docker-compose.yml
-    - Nginx - web server for API server, SSL offloading (and load balancing when using multiple nodes); refer to toy_application\nginx
-    - Jenkins - for automated build and deployment (CI/CD); refer to toy_application\Jenkinsfile
-    - unittest - for API unit testing
-    - curl - for API system testing
+    - <b>Flask</b> - for API development
+    - <b>gUnicorn</b> - for WSGI server; refer to toy_application\restapi\src\wsgi.py
+    - <b>Docker</b> - for microservice containerization
+    - <b>Docker-compose</b> - for building and running the docker containers; refer to toy_application\docker-compose.yml
+    - <b>Nginx</b> - web server for API server, SSL offloading (and load balancing when using multiple nodes); refer to toy_application\nginx
+    - <b>Jenkins</b> - for automated build and deployment (CI/CD); refer to toy_application\Jenkinsfile
+    - <b>unittest</b> - for API unit testing
+    - <b>curl</b> - for API system testing
 
 - Below are the APIs:
 
