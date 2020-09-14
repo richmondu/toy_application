@@ -136,7 +136,7 @@ test_api.py
 
 4. <b>Documentation</b>
 
-   Use Swagger (OpenAPI) for documentation.
+   Use Swagger (OpenAPI) for documentation. When using FastAPI, support for Swagger is easier.
 
 5. <b>Others</b>
 
