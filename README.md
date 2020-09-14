@@ -1,15 +1,17 @@
 # Toy Application 
 
-### Requirements
+This is a simple exercise demonstrating serving APIs for object detection.
 
-#### Background:
+# Requirements
+
+### Background:
 
 The software team is currently focused on developing applications for machine vision related products. 
 The applications are meant to be deployed at client sites. 
 However, as part of marketing efforts, parallel versions of the applications are deployed on the cloud to help the company reach a larger audience and expand the client base.
 
 
-#### The challenge:
+### The challenge:
 
 At the heart of many machine vision solutions is a software package named OpenCV. 
 In order to test applicant adaptability to one of many software packages used by the team, this challenge involves a toy backend application.
@@ -19,7 +21,7 @@ The API endpoint or endpoints must handle all the inputs required by the applica
 Link to the openCV application can be found here: https://www.geeksforgeeks.org/detect-an-object-with-opencv-python/
 
 
-#### Submission Guidelines:
+### Submission Guidelines:
 
 - Package the submission as a container project.
 
@@ -48,7 +50,7 @@ Link to the openCV application can be found here: https://www.geeksforgeeks.org/
     - How would you solve these issues?
 
 
-### Design
+# Design
 
 This solution uses </b>microservices architecture</b> instead of using serverless architecture for better control and flexibility - can run anywhere, any cloud, not tied up to AWS.
 
@@ -70,10 +72,10 @@ This solution uses </b>microservices architecture</b> instead of using serverles
     - <b>Download processed image</b> GET /api/v1/objectdetection/image/{id}/processed
 
 
-### Testing
+# Testing
 
 
-#### System testing
+### System testing
 
 test_curl_upload.bat
 
@@ -95,7 +97,7 @@ test_curl_download.bat
 - curl -o image__zoom200_0_300_300.jpg http://127.0.0.1:8000/api/v1/objectdetection/image/image__zoom200_0_300_300.jpg/processed
 
 
-#### Unit testing
+### Unit testing
 
 test.py
 
@@ -116,7 +118,7 @@ test_api.py
 
 
 
-### Points for improvement:
+# Points for improvement:
 
 1. <b>File name conflicts</b>
 
