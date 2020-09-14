@@ -4,10 +4,10 @@ info:
   description: "Simple application demonstrating operationalizing object detection model"
   version: "1.0.0"
 servers:
-  - url: http://127.0.0.1:8000/api/v1
-    description: For local development testing
   - url: https://richmondu.com/api/v1
     description: For live production testing
+  - url: http://127.0.0.1:8000/api/v1
+    description: For local development testing
 paths:
   /objectdetection/image:
     post:
