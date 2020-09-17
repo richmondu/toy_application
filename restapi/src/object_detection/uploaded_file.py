@@ -1,8 +1,7 @@
-from flask import request, Blueprint, jsonify, abort, send_from_directory
-from werkzeug.utils import secure_filename
-from object_detection.util.api_logger import ApiLogger
 import os
 import threading
+from flask import request, Blueprint, jsonify, abort, send_from_directory
+from werkzeug.utils import secure_filename
 from object_detection.model.cfg_file import CfgFile
 from object_detection.model.img_file import ImgFile
 from object_detection.controller.object_detection_haarcascade import HaarCascadeClassifier

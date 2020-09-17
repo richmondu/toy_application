@@ -201,6 +201,7 @@ test_api.py
 
    Generating ids instead of filename as id will prevent conflicts from multiple users.
    Adding user sessions will also prevent that issue from occuring.
+   Saving src and dst path of images using a database will also fix that problem.
 
 2. <b>File storage</b>
 
@@ -220,7 +221,7 @@ test_api.py
 
 5. <b>Scalability and High-availability</b>
 
-   Use <b>AWS Elastic Load Balancer</b> that points to an <b>Auto Scaling Group</b> of more than 1 EC2 instance located in <b>multi-AZ availability zones</b> for scalability and high availability
+   Use <b>AWS Elastic Load Balancer</b> (ELB) that points to an <b>Auto Scaling Group</b> (ASG) of more than 1 EC2 instance located in <b>multi-availability zones</b> (multi-AZ) for scalability and high availability
    Can alternatively use Docker Swarm or Kubernetes (not is not recommended now since there are only 2 containers).
 
 
