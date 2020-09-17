@@ -8,9 +8,9 @@ from object_detection.controller.object_detection_haarcascade import HaarCascade
 
 
 IMAGE_FILE_EXT      = ['.jpg']
-IMAGE_DIR_UPLOADS   = "object_detection\\user_images\\input\\"
-IMAGE_DIR_PROCESSED = "object_detection\\user_images\\output\\"
-IMAGE_DIR_CONFIG    = "object_detection\\test_config\\"
+IMAGE_DIR_UPLOADS   = "./object_detection/user_images/input/"
+IMAGE_DIR_PROCESSED = "./object_detection/user_images/output/"
+IMAGE_DIR_CONFIG    = "./object_detection/test_config/"
 
 
 class UploadedFile:
