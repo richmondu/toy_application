@@ -14,6 +14,7 @@ class HaarCascadeClassifier(IObjectDetection):
 
 	def process_image(self):
 		try:
+			print(self.img.dir + self.img.path)
 			img = cv2.imread(self.img.dir + self.img.path)
 			classification = self._apply_classification()
 			detection = self._detect_bounds(img, classification)
