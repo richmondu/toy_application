@@ -37,6 +37,7 @@ class HaarCascadeClassifier(IObjectDetection):
 			for (x, y, width, height) in detection: 
 				new_img = cv2.rectangle(img, (x, y), (x + height, y + width), (0, 255, 0), 5) 
 			output = self.output_dir + self.img.path
+			print(output)
 			cv2.imwrite(output, new_img)
 			return ImgFile(path=self.img.path, dir=self.output_dir)
 		return None
