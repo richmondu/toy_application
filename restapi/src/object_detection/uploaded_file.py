@@ -74,11 +74,15 @@ class UploadedFile:
 
 	def download_processed(self):
 		if self.file_name is None:
+			print("1")
 			return None
 		if not os.path.isfile(IMAGE_DIR_PROCESSED + self.file_name):
 			if not os.path.isfile(IMAGE_DIR_UPLOADS + self.file_name):
+				print("2")
 				return None
+			print("3")
 			return send_from_directory(directory=IMAGE_DIR_UPLOADS, filename=self.file_name)
+		print("4")
 		return send_from_directory(directory=IMAGE_DIR_PROCESSED, filename=self.file_name)
 
 
