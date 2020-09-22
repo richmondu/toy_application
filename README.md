@@ -1,6 +1,6 @@
 # Toy Application 
 
-This is a simple exercise demonstrating serving APIs for object detection.
+This is a simple exercise demonstrating serving RESTful web APIs for a machine learning model - in this case, a simple HaarCascade algorithm for object detection.
 
 <img src="./_images/image_processed.jpg" width="1000"/>
 
