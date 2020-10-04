@@ -106,11 +106,9 @@ This technique is often useful in computer vision and machine learning projects 
 
 ### System testing
 
-via <b>Swagger UI</b> (https://petstore.swagger.io/)
+via <b>Swagger Hub</b>
 
-- Copy https://hacarustoyapplication.s3.amazonaws.com/swagger_openapi.json to the Swagger UI Explore input
-
-- Click on Explore button
+- Go to https://app.swaggerhub.com/apis-docs/richmondu/toy-application/1.0.0
 
 - Select http://127.0.0.1:8000 localhost or https://richmondu.com
 
@@ -129,25 +127,14 @@ via <b>Swagger UI</b> (https://petstore.swagger.io/)
   <img src="./_images/SwaggerUI.png" width="1000"/>
 
 
+via <b>Swagger UI</b> (https://petstore.swagger.io/)
+
+- Copy https://hacarustoyapplication.s3.amazonaws.com/swagger_openapi.json to the Swagger UI Explore input then click on Explore button
+
+
 via <b>Swagger Editor</b> (https://editor.swagger.io/)
 
 - Copy https://hacarustoyapplication.s3.amazonaws.com/swagger_openapi.yaml to the Swagger Editor 
-
-- Select http://127.0.0.1:8000 localhost or https://richmondu.com
-
-- Test Upload image 
-
-    (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
-
-- Test Download image 
-
-    (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
-
-- Test Download processed image 
-
-    (Click Try it out -> Click Choose File button -> Select file to upload ex. image.jpg -> Click Execute -> Response should be ok)
-
-  <img src="./_images/SwaggerEditor.png" width="1000"/>
 
 
 via <b>test_curl_upload.bat</b>
